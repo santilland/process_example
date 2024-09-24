@@ -14,13 +14,15 @@
         "rel": "child",
         "href": "./process-collection1/collection.json",
         "type": "application/json",
-        "title": "Process collection example 1"
+        "title": "Process collection example 1",
+        "id": "process-collection1"
       },
       {
         "rel": "child",
         "href": "./process-collection2/collection.json",
         "type": "application/json",
-        "title": "Process collection example 2"
+        "title": "Process collection example 2",
+        "id": "process-collection2"
       },
       {
         "rel": "self",

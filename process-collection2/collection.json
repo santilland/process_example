@@ -1,6 +1,7 @@
 {
     "stac_version": "1.1.0",
     "type": "Collection",
+    "id": "process-collection2",
     "eodash:jsonform": "<link jsonform>",
     "links": [
       {
