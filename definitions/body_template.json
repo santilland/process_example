@@ -1,0 +1,7 @@
+{
+    "inputs": {
+        "OUTPUT_DIR": "test-1",
+        "ICECHART_SHAPEFILE": "202408131425_CapeFarewell_RIC.zip",
+        "ICECHART_PROVIDER": "dmi"
+    }
+}

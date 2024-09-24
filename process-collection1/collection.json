@@ -1,0 +1,15 @@
+{
+    "stac_version": "1.1.0",
+    "type": "Collection",
+    "eodash:jsonform": "https://santilland.github.io/process_example/definitions/jsonform1.json",
+    "links": [
+      {
+        "id": "ship_detection",
+        "href": "https://gtif-backend.hub.eox.at/ship_detection?lon_min={{lon_min}}&lat_min={{lat_min}&lon_max={{lon_max}}&lat_max={{lat_max}}&start_date={{start_date}}&end_date={{end_date}}&threshold={{threshold}}",
+        "rel": "service",
+        "method": "GET",
+        "type": "application/json",
+        "eox:flatstyle": "https://santilland.github.io/process_example/definitions/flatstyle1.json"
+      }
+    ]
+  }
