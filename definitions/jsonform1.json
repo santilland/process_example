@@ -4,7 +4,8 @@
         "bbox": {
             "type": "object",
             "title": "Select area on map",
-            "properties": {
+            "options": {
+                "for": "eox-map#main"
             },
             "format": "bounding-box"
         },
