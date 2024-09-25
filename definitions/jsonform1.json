@@ -10,15 +10,12 @@
             "format": "bounding-box"
         },
         "date": {
-            "type": "object",
-            "properties": {
-                "date": {
-                    "type": "date",
-                    "format": "date"
-                }
-            }
+            "title": "Select date",
+            "type": "date",
+            "format": "date"
         },
         "threshold": {
+            "title": "Select threshold",
             "type": "number",
             "minimum": 0,
             "maximum": 1,
