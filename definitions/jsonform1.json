@@ -27,16 +27,12 @@
             },
             "format": "bboxselection"
         },
-        "time_range": {
+        "date": {
             "type": "object",
             "properties": {
-                "start_date": {
+                "date": {
                     "type": "date",
-                    "format": "datetime-local"
-                },
-                "end_date": {
-                    "type": "date",
-                    "format": "datetime-local"
+                    "format": "date"
                 }
             }
         },
@@ -44,6 +40,7 @@
             "type": "number",
             "minimum": 0,
             "maximum": 1,
+            "default": 0.55,
             "format": "range"
         }
     }
