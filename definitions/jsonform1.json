@@ -31,10 +31,12 @@
             "type": "object",
             "properties": {
                 "start_date": {
-                    "type": "date"
+                    "type": "date",
+                    "format": "datetime-local"
                 },
                 "end_date": {
-                    "type": "date"
+                    "type": "date",
+                    "format": "datetime-local"
                 }
             }
         },
