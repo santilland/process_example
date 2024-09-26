@@ -6,7 +6,7 @@
     "links": [
       {
         "id": "ship_detection",
-        "href": "https://gtif-backend.hub.eox.at/ship_detection?lon_min={{bbox[0]}}&lat_min={{bbox[1]}}&lon_max={{bbox[2]}}&lat_max={{bbox[3]}}&start_date={{date}}&end_date={{date}}&threshold={{threshold}}",
+        "href": "https://gtif-backend.hub.eox.at/ship_detection?lon_min={{bbox.0}}&lat_min={{bbox.1}}&lon_max={{bbox.2}}&lat_max={{bbox.3}}&start_date={{date}}&end_date={{date}}&threshold={{threshold}}",
         "rel": "service",
         "method": "GET",
         "type": "application/geo+json",
