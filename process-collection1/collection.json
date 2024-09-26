@@ -11,6 +11,13 @@
         "method": "GET",
         "type": "application/geo+json",
         "eox:flatstyle": "https://santilland.github.io/process_example/definitions/flatstyle1.json"
+      },
+      {
+        "id": "s2_background",
+        "href": "https://services.sentinel-hub.com/ogc/wms/0635c213-17a1-48ee-aef7-9d1731695a54?REQUEST=GetMap&SERVICE=WMS&VERSION=1.3.0&FORMAT=image%2Fpng&STYLES=&TRANSPARENT=true&layers=SENTINEL-2-L2A-TRUE-COLOR&format=image%2Fpng&time={{date}}/{{date}}&RESX=4&RESY=4&CRS=EPSG%3A3857&BBOX={{bbox}}",
+        "rel": "service",
+        "method": "GET",
+        "type": "image/png"
       }
     ]
   }
