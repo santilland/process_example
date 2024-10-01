@@ -1,0 +1,18 @@
+{
+    "stac_version": "1.1.0",
+    "type": "Collection",
+    "id": "process-collection2",
+    "eodash:jsonform": "<link jsonform>",
+    "links": [
+      {
+        "id": "polaris_example",
+        "href": "https://polaris.gtif.eox.at/processes/polaris/execution",
+        "rel": "service",
+        "method": "POST",
+        "headers": {"Content-Type": "application/json"},
+        "body": "https://santilland.github.io/process_example/definitions/body_template.json",
+        "type": "image/tiff",
+        "eox:flatstyle": "https://santilland.github.io/process_example/definitions/flatstyle2.json"
+      }
+    ]
+  }

@@ -2,15 +2,14 @@
     "stac_version": "1.1.0",
     "type": "Collection",
     "id": "process-collection2",
-    "eodash:jsonform": "<link jsonform>",
+    "title": "Harshness calculation",
+    "eodash:jsonform": "https://santilland.github.io/process_example/definitions/jsonform2.json",
     "links": [
       {
-        "id": "polaris_example",
-        "href": "https://polaris.gtif.eox.at/processes/polaris/execution",
+        "id": "harshness results",
+        "href": "https://eox-gtif-public.s3.eu-central-1.amazonaws.com/test_data_polartep/harshness_2023_2023_4_60_0.2_0.2_-71_41_25_82_NipTLzM1MCsyLjUqVy8xMTArMS41KihJPjAuMDEpKigxMisyKmxvZzEwKChJLzEwMDAwKSsxZS00MCkp.tif",
         "rel": "service",
-        "method": "POST",
-        "headers": {"Content-Type": "application/json"},
-        "body": "https://santilland.github.io/process_example/definitions/body_template.json",
+        "method": "GET",
         "type": "image/tiff",
         "eox:flatstyle": "https://santilland.github.io/process_example/definitions/flatstyle2.json"
       }

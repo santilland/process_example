@@ -1,30 +1,64 @@
 {
     "type": "object",
     "properties": {
-      "vminmax": {
-        "type": "object",
-        "properties": {
-          "vmin": {
-            "type": "number",
-            "minimum": 0,
-            "maximum": 10,
-            "format": "range"
-          },
-          "vmax": {
-            "type": "number",
-            "minimum": 0,
-            "maximum": 10,
-            "format": "range"
-          }
+        "bbox": {
+            "type": "object",
+            "title": "Select area on map",
+            "options": {
+                "for": "eox-map#main"
+            },
+            "format": "bounding-box"
         },
-        "format": "minmax"
-      },
-      "cbar": {
-        "type": "string",
-        "enum": [
-          "rain",
-          "temperature"
-        ]
-      }
+        "wave_height": {
+            "type": "number",
+            "title": "Maximum acceptable wave height [m]",
+            "minimum": 0,
+            "maximum": 10,
+            "default": 3,
+            "format": "range"
+        },
+        "wind_speed": {
+            "type": "number",
+            "title": "Maximum wind speed [knots]",
+            "minimum": 0,
+            "maximum": 40,
+            "default": 20,
+            "format": "range"
+        },
+        "wind_direction": {
+            "type": "string",
+            "title": "Wind direction relative to ship",
+            "enum": [
+                "north",
+                "east",
+                "south",
+                "west"
+            ]
+        },
+        "ocean_currents": {
+            "type": "number",
+            "title": "Maximum current speed [knots]",
+            "minimum": 0,
+            "maximum": 10,
+            "step": 0.1,
+            "default": 1.5,
+            "format": "range"
+        },
+        "sea_ice_concentration": {
+            "type": "number",
+            "title": "Maximum acceptable ice concentration [%]",
+            "minimum": 0,
+            "maximum": 100,
+            "default": 15,
+            "format": "range"
+        },
+        "bathymetry": {
+            "type": "number",
+            "title": "Minimum water depth [m]",
+            "minimum": 0,
+            "maximum": 80,
+            "default": 20,
+            "format": "range"
+        }
     }
-  }
+}
