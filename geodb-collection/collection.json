@@ -1,0 +1,49 @@
+{
+    "type": "Collection",
+    "id": "geodb-collection",
+    "stac_version": "1.0.0",
+    "description": "description",
+    "eodash:jsonform": "https://santilland.github.io/process_example/definitions/geodbform.json",
+    "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/geodbvega.json",
+    "links": [
+        {
+            "id": "geodb_example",
+            "href": "https://xcube-geodb.brockmann-consult.de/eodash/6bf15325-f6a0-4b6a-bf80-a2491753f8f2/eodash_N1b?aoi_id=eq.{{feature}}&select=site_name,city,color_code,time,aoi,measurement_value,indicator_value,reference_time,eo_sensor,reference_value,input_data",
+            "rel": "service",
+            "method": "GET",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./Vienna.json",
+            "type": "application/json",
+            "id": "AT5",
+            "latlng": "48.2,16.37",
+            "country": "AT",
+            "city": "Vienna"
+        }
+    ],
+    "endpointtype": "GeoDB",
+    "title": "Air Quality (NO2 concetrations) at city level (model)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -21.96,
+                    35.160000000000004,
+                    33.379999999999995,
+                    64.16000000000001
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2022-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -25,6 +25,13 @@
         "id": "process-collection2"
       },
       {
+        "rel": "child",
+        "href": "./geodb-collection/collection.json",
+        "type": "application/json",
+        "title": "geodb feature selection example",
+        "id": "geodb-collection"
+      },
+      {
         "rel": "self",
         "href": "https://raw.githubusercontent.com/santilland/process_example/catalog.json",
         "type": "application/json"
