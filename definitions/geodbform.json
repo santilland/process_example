@@ -6,8 +6,8 @@
             "title": "Select feature on map",
             "options": {
                 "for": "eox-map#main",
-                "layerId": "geoDBFeatures",
-                "property": "id"
+                "layerId": "geodb-collection",
+                "featureProperty": "id"
             },
             "format": "feature"
         }
