@@ -59,7 +59,7 @@
             "select": {
               "type": "point",
               "fields": [
-                "date"
+                "time"
               ],
               "nearest": true,
               "on": "pointerover",

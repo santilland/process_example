@@ -5,7 +5,8 @@
             "type": "spatial",
             "title": "Select area on map",
             "options": {
-                "for": "eox-map#main"
+                "for": "eox-map#main",
+                "projection": "EPSG:3857"
             },
             "format": "bounding-box"
         },
