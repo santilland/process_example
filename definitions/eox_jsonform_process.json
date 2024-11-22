@@ -10,12 +10,12 @@
             },
             "format": "polygon"
         },
-        "start_date": {
+        "date_start": {
             "title": "Select start date",
             "type": "date",
             "format": "date"
         },
-        "end_date": {
+        "date_end": {
             "title": "Select end date",
             "type": "date",
             "format": "date"
