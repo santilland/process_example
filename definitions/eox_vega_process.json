@@ -1,0 +1,73 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 400,
+    "data": {
+      "name": "process_eox"
+    },
+    "encoding": {"x": {"field": "date", "type": "temporal"}},
+    "layer": [
+      {
+        "mark": {"type": "line", "filled": false},
+        "encoding": {
+          "y": {
+            "aggregate": "mean",
+            "field": "mean",
+            "type": "quantitative",
+            "scale": {"zero": false},
+            "title": "Value"
+          },
+          "color": {"value": "black"}
+        }
+      },
+      {
+        "mark": {"type": "line"},
+        "encoding": {
+          "y": {"field": "min", "type": "quantitative"},
+          "y2": {"field": "max"}
+        }
+      },
+      {
+          "mark": "rule",
+          "encoding": {
+            "opacity": {
+              "condition": {
+                "value": 0.3,
+                "param": "hover",
+                "empty": false
+              },
+              "value": 0
+            },
+            "tooltip": [
+              {
+                "field": "mean",
+                "type": "quantitative"
+              },
+              {
+                "field": "min",
+                "type": "quantitative"
+              },
+              {
+                "field": "max",
+                "type": "quantitative"
+              }
+            ]
+          },
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "date"
+                ],
+                "nearest": true,
+                "on": "pointerover",
+                "clear": "pointerout"
+              }
+            }
+          ]
+        }
+    ]
+  }
+  

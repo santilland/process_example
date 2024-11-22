@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    "properties": {
+        "geometry": {
+            "type": "spatial",
+            "title": "Select polygon on map",
+            "options": {
+                "for": "eox-map#main",
+                "projection": "EPSG:4326"
+            },
+            "format": "polygon"
+        },
+        "start_date": {
+            "title": "Select start date",
+            "type": "date",
+            "format": "date"
+        },
+        "end_date": {
+            "title": "Select end date",
+            "type": "date",
+            "format": "date"
+        }
+    }
+}
