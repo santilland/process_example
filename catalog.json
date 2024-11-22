@@ -32,6 +32,13 @@
         "id": "geodb-collection"
       },
       {
+        "rel": "child",
+        "href": "./process-eox/collection.json",
+        "type": "application/json",
+        "title": "process eox example",
+        "id": "process-eox"
+      },
+      {
         "rel": "self",
         "href": "https://raw.githubusercontent.com/santilland/process_example/catalog.json",
         "type": "application/json"
