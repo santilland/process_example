@@ -2,7 +2,7 @@
     "type": "object",
     "properties": {
         "geometry": {
-            "type": "spatial",
+            "type": "geojson",
             "title": "Select polygon on map",
             "options": {
                 "for": "eox-map#main",
