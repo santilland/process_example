@@ -1,7 +1,7 @@
 {
     "type": "object",
     "properties": {
-        "geometry": {
+        "feature": {
             "type": "geojson",
             "title": "Select polygon on map",
             "options": {

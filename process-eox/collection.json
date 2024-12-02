@@ -7,7 +7,7 @@
   "links": [
     {
       "id": "process_eox",
-      "href": "https://statelix.hub-int.eox.at/ch4-stats/?geometry={{{geometry}}}&date_start={{date_start}}&date_end={{date_end}}",
+      "href": "https://statelix.hub-int.eox.at/ch4-stats/?geometry={{{feature.geometry}}}&date_start={{date_start}}&date_end={{date_end}}",
       "rel": "service",
       "method": "GET",
       "type": "application/json"
