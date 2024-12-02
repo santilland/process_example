@@ -2,7 +2,7 @@
     "type": "object",
     "properties": {
         "bbox": {
-            "type": "spatial",
+            "type": "array",
             "title": "Select area on map",
             "options": {
                 "for": "eox-map#main"
