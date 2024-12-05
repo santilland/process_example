@@ -1,0 +1,19 @@
+{
+  "stac_version": "1.1.0",
+  "type": "Collection",
+  "id": "harshness-collection",
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/harshness_form.json",
+  "links": [
+    {
+      "id": "harshnesscollection",
+      "href": "https://harshness-map.gtif.eox.at/processes/execute-create-harshness/execution",
+      "rel": "service",
+      "method": "POST",
+      "endpoint": "ogc_process_api",
+      "headers": {"Content-Type": "application/json"},
+      "body": "https://santilland.github.io/process_example/definitions/harshness_body.json",
+      "type": "image/tiff",
+      "eox:flatstyle": "https://santilland.github.io/process_example/definitions/harshness_style.json"
+    }
+  ]
+}

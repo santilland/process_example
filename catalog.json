@@ -12,6 +12,13 @@
       },
       {
         "rel": "child",
+        "href": "./harshness-collection/collection.json",
+        "type": "application/json",
+        "title": "Process harshness example",
+        "id": "harshness-collection"
+      },
+      {
+        "rel": "child",
         "href": "./process-collection1/collection.json",
         "type": "application/json",
         "title": "Process collection example 1",
