@@ -2,25 +2,51 @@
     "type": "object",
     "properties": {
         "feature": {
-            "type": "geojson",
-            "title": "Select polygon on map",
+            "type": "array",
+            "title": "Select area (bbox) on map",
             "options": {
                 "for": "eox-map#main",
                 "projection": "EPSG:4326"
             },
-            "format": "polygon"
+            "format": "bounding-box"
         },
         "date_start": {
-            "title": "Select start date",
-            "type": "date",
-            "format": "date",
-            "default": "2024-01-01"
+            "type": "string",
+            "title": "Select start year",
+            "enum": [
+                "2019",
+                "2020",
+                "2021",
+                "2022"
+            ],
+            "default": "2020"
         },
         "date_end": {
-            "title": "Select end date",
-            "type": "date",
-            "format": "date",
-            "default": "2024-03-20"
+            "type": "string",
+            "title": "Select end year",
+            "enum": [
+                "2019",
+                "2020",
+                "2021",
+                "2022"
+            ],
+            "default": "2021"
+        },
+        "wave_height": {
+            "type": "number",
+            "title": "Maximum acceptable wave height [m]",
+            "minimum": 0,
+            "maximum": 10,
+            "default": 3,
+            "format": "range"
+        },
+        "sea_ice_concentration": {
+            "type": "number",
+            "title": "Maximum acceptable ice concentration [%]",
+            "minimum": 0,
+            "maximum": 100,
+            "default": 15,
+            "format": "range"
         }
     }
 }

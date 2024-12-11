@@ -9,7 +9,7 @@
       "href": "https://harshness-map.gtif.eox.at/processes/execute-create-harshness/execution",
       "rel": "service",
       "method": "POST",
-      "endpoint": "ogc_process_api",
+      "endpoint": "eoxhub_workspaces",
       "headers": {"Content-Type": "application/json"},
       "body": "https://santilland.github.io/process_example/definitions/harshness_body.json",
       "type": "image/tiff",
