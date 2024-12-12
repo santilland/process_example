@@ -45,7 +45,8 @@
             "title": "Maximum acceptable ice concentration [%]",
             "minimum": 0,
             "maximum": 100,
-            "default": 15,
+            "step": 10,
+            "default": 50,
             "format": "range"
         }
     }
