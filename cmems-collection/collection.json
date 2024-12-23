@@ -1,0 +1,16 @@
+{
+  "stac_version": "1.1.0",
+  "type": "Collection",
+  "id": "process-cmems",
+  "eodash:jsonform": "https://santilland.github.io/process_example/definitions/cmems_jsonform_process.json",
+  "eodash:vegadefinition": "https://santilland.github.io/process_example/definitions/cmems_vega_process.json",
+  "links": [
+    {
+      "id": "process_cmems",
+      "href": "https://statelix.hub-int.eox.at/cmems?variables=vo&start_datetime={{date_start}}&end_datetime={{date_end}}",
+      "rel": "service",
+      "method": "GET",
+      "type": "application/json"
+    }
+  ]
+}

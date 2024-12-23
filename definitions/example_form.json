@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "bbox": {
+            "type": "object",
+            "title": "Select area on map",
+            "options": {
+                "for": "eox-map#main"
+            },
+            "format": "bounding-box"
+        },
+        "start_year": {
+            "type": "number",
+            "title": "Start year",
+            "default": 2019,
+            "enum": [
+                2019, 2020, 2021, 2022, 2023
+            ]
+        },
+        "end_year": {
+            "type": "number",
+            "title": "End year",
+            "default": 2022,
+            "enum": [
+                2019, 2020, 2021, 2022, 2023
+            ]
+        },
+        "wave_height_thresh": {
+            "type": "number",
+            "title": "Maximum acceptable wave height [m]",
+            "minimum": 1,
+            "maximum": 10,
+            "default": 3,
+            "format": "range"
+        },
+        "sea_ice_concentration_thresh": {
+            "type": "number",
+            "title": "Sea ice concentration [%]",
+            "minimum": 0,
+            "maximum": 90,
+            "default": 10,
+            "format": "range"
+        }
+    }
+}

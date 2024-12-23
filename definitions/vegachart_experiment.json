@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 400,
+    "data": {
+      "values": [
+        {"date": "2024-01-15", "min": 1942.022705078125, "max": 1944.5146484375, "mean": 1943.38623046875, "stddev": 1.0784178972244263},
+        {"date": "2024-01-22", "min": 1911.77880859375, "max": 1921.5423583984375, "mean": 1917.5880126953125, "stddev": 3.9846432209014893},
+        {"date": "2024-01-29", "min": 1918.9962158203125, "max": 1939.556884765625, "mean": 1931.0010986328125, "stddev": 7.879556179046631},
+        {"date": "2024-03-18", "min": 1849.060791015625, "max": 1855.5059814453125, "mean": 1852.513916015625, "stddev": 2.365571975708008}
+      ]
+    },
+    "encoding": {"x": {"field": "date", "type": "temporal"}},
+    "layer": [
+      {
+        "mark": {"type": "line", "filled": false},
+        "encoding": {
+          "y": {
+            "aggregate": "mean",
+            "field": "mean",
+            "type": "quantitative",
+            "scale": {"zero": false},
+            "title": "Value"
+          },
+          "color": {"value": "black"}
+        }
+      },
+      {
+        "mark": {"type": "line"},
+        "encoding": {
+          "y": {"field": "min", "type": "quantitative"},
+          "y2": {"field": "max"}
+        }
+      }
+    ]
+  }
+  

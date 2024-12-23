@@ -12,6 +12,13 @@
       },
       {
         "rel": "child",
+        "href": "./cmems-collection/collection.json",
+        "type": "application/json",
+        "title": "CMEMS statistics example",
+        "id": "cmems-collection"
+      },
+      {
+        "rel": "child",
         "href": "./harshness-collection/collection.json",
         "type": "application/json",
         "title": "Process harshness example",
