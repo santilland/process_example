@@ -3,72 +3,71 @@
   "data": {
     "name": "process_eox"
   },
-  "encoding": {
-    "x": {
-      "field": "datetime",
-      "type": "temporal"
-    }
-  },
+  "transform": [{
+    "flatten":["vo"]
+  }],
+  "encoding": {"x": {"field": "vo.datetime", "type": "temporal"}},
   "layer": [
     {
-      "mark": {"type": "area", "color": "lightgrey"},
-      "encoding": {
-        "y": {"field": "min", "type": "quantitative"},
-        "y2": {"field": "max", "type": "quantitative"}
-      }
-    },
-    {
-      "mark": {"type": "line", "color": "green"},
-      "encoding": {
-        "y": {"field": "min", "type": "quantitative"}
-      }
-    },
-    {
-      "mark": {"type": "line", "color": "red"},
-      "encoding": {
-        "y": {"field": "max", "type": "quantitative"}
-      }
-    },
-    {
-      "mark": {"type": "line", "color": "black"},
+      "mark": {"type": "line", "filled": false},
       "encoding": {
         "y": {
           "aggregate": "mean",
-          "field": "mean",
+          "field": "vo.mean",
           "type": "quantitative",
           "scale": {"zero": false},
           "title": "Value"
-        }
+        },
+        "color": {"value": "black"}
       }
     },
     {
-      "mark": "rule",
+      "mark": {"type": "line"},
       "encoding": {
-        "opacity": {
-          "condition": {
-            "value": 0.3,
-            "param": "hover",
-            "empty": false
+        "y": {"field": "vo.min", "type": "quantitative"},
+        "y2": {"field": "vo.max"}
+      }
+    },
+    {
+        "mark": "rule",
+        "encoding": {
+          "opacity": {
+            "condition": {
+              "value": 0.3,
+              "param": "hover",
+              "empty": false
+            },
+            "value": 0
           },
-          "value": 0
+          "tooltip": [
+            {
+              "field": "vo.mean",
+              "type": "quantitative"
+            },
+            {
+              "field": "vo.min",
+              "type": "quantitative"
+            },
+            {
+              "field": "vo.max",
+              "type": "quantitative"
+            }
+          ]
         },
-        "tooltip": [
-          {"field": "mean", "type": "quantitative"},
-          {"field": "min", "type": "quantitative"},
-          {"field": "max", "type": "quantitative"}
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": [
+                "vo.datetime"
+              ],
+              "nearest": true,
+              "on": "pointerover",
+              "clear": "pointerout"
+            }
+          }
         ]
       }
-    }
-  ],
-  "params": [
-    {
-      "name": "hover",
-      "select": {
-        "type": "point",
-        "fields": ["datetime"],
-        "on": "mouseover",
-        "nearest": true
-      }
-    }
   ]
 }
