@@ -7,7 +7,7 @@
   "links": [
     {
       "id": "process_cmems",
-      "href": "https://statelix.hub-int.eox.at/cmems?variables=vo&start_datetime={{date_start}}&end_datetime={{date_end}}",
+      "href": "https://statelix.hub-int.eox.at/cmems?variables=vo&start_datetime={{date_start}}&end_datetime={{date_end}}&minimum_longitude={{bbox.0}}&minimum_latitude={{bbox.1}}&maximum_longitude={{bbox.2}}&maximum_latitude={{bbox.3}}",
       "rel": "service",
       "method": "GET",
       "type": "application/json"

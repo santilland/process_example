@@ -2,13 +2,13 @@
     "type": "object",
     "properties": {
         "bbox": {
-            "type": "bounding-box",
+            "type": "array",
             "title": "Select area on map",
             "options": {
                 "for": "eox-map#main",
                 "projection": "EPSG:4326"
             },
-            "format": "array"
+            "format": "bounding-box"
         },
         "date_start": {
             "title": "Select start date",
