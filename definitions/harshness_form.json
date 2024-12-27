@@ -40,6 +40,15 @@
             "default": 3,
             "format": "range"
         },
+        "wave_height_weight": {
+            "type": "number",
+            "title": "Weight applied for wave height parameter",
+            "minimum": 0,
+            "maximum": 10,
+            "default": 2.5,
+            "step": 0.5,
+            "format": "range"
+        },
         "sea_ice_concentration": {
             "type": "number",
             "title": "Maximum acceptable ice concentration [%]",
@@ -47,6 +56,24 @@
             "maximum": 100,
             "step": 10,
             "default": 50,
+            "format": "range"
+        },
+        "sea_ice_concentration_weight": {
+            "type": "number",
+            "title": "Weight applied for sea ice concentration parameter",
+            "minimum": 0,
+            "maximum": 10,
+            "step": 0.5,
+            "default": 6,
+            "format": "range"
+        },
+        "ice_berg_weight": {
+            "type": "number",
+            "title": "Weight applied for ice berg parameter",
+            "minimum": 0,
+            "maximum": 10,
+            "step": 0.5,
+            "default": 1.5,
             "format": "range"
         }
     }
