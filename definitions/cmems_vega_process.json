@@ -4,16 +4,16 @@
     "name": "process_eox"
   },
   "transform": [{
-    "flatten":["vo"]
+    "flatten":["thetao"]
   }],
-  "encoding": {"x": {"field": "vo.datetime", "type": "temporal"}},
+  "encoding": {"x": {"field": "thetao.datetime", "type": "temporal"}},
   "layer": [
     {
       "mark": {"type": "line", "filled": false},
       "encoding": {
         "y": {
           "aggregate": "mean",
-          "field": "vo.mean",
+          "field": "thetao.mean",
           "type": "quantitative",
           "scale": {"zero": false},
           "title": "Value"
@@ -24,8 +24,8 @@
     {
       "mark": {"type": "line"},
       "encoding": {
-        "y": {"field": "vo.min", "type": "quantitative"},
-        "y2": {"field": "vo.max"}
+        "y": {"field": "thetao.min", "type": "quantitative"},
+        "y2": {"field": "thetao.max"}
       }
     },
     {
@@ -41,15 +41,15 @@
           },
           "tooltip": [
             {
-              "field": "vo.mean",
+              "field": "thetao.mean",
               "type": "quantitative"
             },
             {
-              "field": "vo.min",
+              "field": "thetao.min",
               "type": "quantitative"
             },
             {
-              "field": "vo.max",
+              "field": "thetao.max",
               "type": "quantitative"
             }
           ]
@@ -60,7 +60,7 @@
             "select": {
               "type": "point",
               "fields": [
-                "vo.datetime"
+                "thetao.datetime"
               ],
               "nearest": true,
               "on": "pointerover",
