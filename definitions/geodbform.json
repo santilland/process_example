@@ -14,7 +14,7 @@
                     "continuous": true,
                     "featureStyles": {
                         "layer": {
-                            "circle-radius": 17,
+                            "circle-radius": 16,
                             "circle-stroke-width": 3,
                             "circle-stroke-color": "#3399CC"
                         }
