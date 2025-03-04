@@ -8,8 +8,10 @@
             "type": "string",
             "title": "Select feature on map",
             "options": {
-                "for": "eox-map#main",
-                "layerId": "geodb-collection",
+                "drawtools": {
+                    "for": "eox-map#main",
+                    "layerId": "geodb-collection"
+                },
                 "featureProperty": "id"
             },
             "format": "feature"
